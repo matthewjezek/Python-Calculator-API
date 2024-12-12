@@ -38,7 +38,7 @@ API odpovídá ve formátu JSON.
 
    ```python -m venv venv```\
    ```source venv/bin/activate   # Na Linux/Mac```\
-   ```venv\Scripts\activate      # Na Windows```
+   ```venv\bin\activate      # Na Windows```
 
 
 4. Nainstalujte závislosti:
