@@ -85,6 +85,90 @@ swagger = {
                     }
                 }
             }
+        },
+        "/multiply": {
+            "get": {
+                "summary": "Násobení dvou čísel",
+                "parameters": [
+                    {
+                        "name": "a",
+                        "in": "query",
+                        "description": "První číslo",
+                        "required": True,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "b",
+                        "in": "query",
+                        "description": "Druhé číslo",
+                        "required": True,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Výsledek násobení",
+                        "content": {
+                            "application/json": {
+                                "example": {
+                                    "result": 12
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/divide": {
+            "get": {
+                "summary": "Dělení dvou čísel s ošetřením dělení nulou",
+                "parameters": [
+                    {
+                        "name": "a",
+                        "in": "query",
+                        "description": "První číslo",
+                        "required": True,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "b",
+                        "in": "query",
+                        "description": "Druhé číslo",
+                        "required": True,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Výsledek dělení",
+                        "content": {
+                            "application/json": {
+                                "example": {
+                                    "result": 4
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Chyba dělení nulou",
+                        "content": {
+                            "application/json": {
+                                "example": {
+                                    "error": "Cannot divide by zero"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
