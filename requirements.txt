@@ -1,5 +1,5 @@
-Flask==2.2.2
-flask-swagger-ui==4.4.2
-sphinx==7.1.1
-sphinxcontrib-plantuml==0.22
-flake8==6.1.0
+Flask
+flask-swagger-ui
+sphinx
+sphinxcontrib-plantuml
+flake8
