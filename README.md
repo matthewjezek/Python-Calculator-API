@@ -48,7 +48,7 @@ API odpovídá ve formátu JSON.
 
 5. Spustťe aplikaci:
 
-   ```python app.py```
+   ```python src/app.py```
 
 
 Aplikace poběží na http://localhost:5000.
